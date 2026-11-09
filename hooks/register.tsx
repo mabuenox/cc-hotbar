@@ -115,8 +115,9 @@ async function loadActions($: EngineInterface) {
   await update($, actions, () => parseActions(text))
 }
 
+// A repo may set core.fsmonitor to a command; git must not run it on our behalf.
 async function refreshRepo($: EngineInterface) {
-  const { exitCode, stdout } = await $.process.run(['git', 'status', '--porcelain=v1', '-b'], { cwd: repoDir }).catch(() => ({ exitCode: 128, stdout: '' }))
+  const { exitCode, stdout } = await $.process.run(['git', '-c', 'core.fsmonitor=false', '--no-optional-locks', 'status', '--porcelain=v1', '-b'], { cwd: repoDir }).catch(() => ({ exitCode: 128, stdout: '' }))
   await update($, repo, () => parseStatus(exitCode, stdout))
 }
 
