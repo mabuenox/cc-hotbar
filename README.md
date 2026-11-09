@@ -27,18 +27,18 @@ Buttons with a dim `/name` under them run a skill; the others send a prompt.
 At the prompt of a Claude Code terminal session:
 
 ```
-/plugin install quick-actions --marketplace OWNER/REPO
+/plugin install quick-actions --marketplace mabuenox/cc-hotbar
 ```
 
 Answer `y` to add the marketplace, then choose a scope (user scope, the first
 option, loads the mod in every session). From a shell:
 
 ```
-claude plugin install quick-actions --marketplace OWNER/REPO
+claude plugin install quick-actions --marketplace mabuenox/cc-hotbar
 ```
 
 In the desktop app, where `/plugin` does not run: click **+** next to the prompt
-box, then **Plugins**, **Add marketplace** with `OWNER/REPO`, then **Add plugin**.
+box, then **Plugins**, **Add marketplace** with `mabuenox/cc-hotbar`, then **Add plugin**.
 
 Requires a Claude Code build with mod support (hooks modules). Developed on 2.1.319.
 
@@ -155,7 +155,7 @@ Written to the configuration file on first run. Delete or edit any of them.
 ## Development
 
 ```
-git clone https://github.com/OWNER/REPO
+git clone https://github.com/mabuenox/cc-hotbar
 claude --plugin-dir ./quick-actions        # loads the mod for one session and hot-reloads on save
 claude plugin validate .                   # manifest, marketplace file and hooks module
 claude plugin test .                       # runs tests/*.test.tsx against the engine
