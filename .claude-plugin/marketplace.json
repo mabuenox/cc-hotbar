@@ -1,0 +1,5 @@
+{
+  "name": "quick-actions",
+  "owner": { "name": "Miguel Angel Bueno Ferrer" },
+  "plugins": [{ "name": "quick-actions", "source": "./" }]
+}

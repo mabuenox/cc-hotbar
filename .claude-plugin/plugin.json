@@ -1,0 +1,1 @@
+{ "name": "quick-actions", "version": "0.1.0", "description": "Pane of quick-action buttons: prompts and skills from ~/.claude/quick-actions.json, some shown only by git state", "types": "./types/index.d.ts" }
