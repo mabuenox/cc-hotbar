@@ -12,8 +12,8 @@ The list of buttons is yours: it lives in `~/.claude/quick-actions.json`.
  ● main  2 changes · ↑1 · ↓0
 
  Git
- [ 📋 Status ]  [ 💾 Commit ]  [ 🔀 Merge main ]  [ ⬆️ Push ]  [ 🚀 Commit and push ]  [ 🔃 Create PR ]
- main           2 changes      main → main       1 commits   2 changes · 1 to push   main → main
+ [ 📋 Status ]  [ 🌿 Switch branch ]  [ 💾 Commit ]  [ 🔀 Merge main ]  [ ⬆️ Push ]  [ 🚀 Commit and push ]  [ 🔃 Create PR ]
+ main           main                 2 changes      main → main       1 commits   2 changes · 1 to push   main → main
 
  Workflow
  [ ▶️ Run the app ]  [ 🧐 Code review ]  [ 🔐 Security review ]  [ ✂️ Simplify ]
