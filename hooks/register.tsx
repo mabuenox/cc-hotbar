@@ -10,6 +10,7 @@ const actions = atom({ plugin: 'quick-actions', key: 'actions' } as const, [], {
 
 export const DEFAULT_ACTIONS: Action[] = [
   { label: 'Status', group: 'Git', icon: '📋', when: 'repo', info: '{branch}', prompt: 'Show the git status of the repository: branch, pending changes and commits to push.' },
+  { label: 'Switch branch', group: 'Git', icon: '🌿', when: 'repo', info: '{branch}', prompt: 'Switch branch: run git fetch, then list the local branches and the branches on origin without a local copy, and ask me which one to check out, with the current one marked. Then check it out. If there are uncommitted changes, stop and tell me before switching.' },
   { label: 'Commit', group: 'Git', icon: '💾', when: 'dirty', info: '{dirty} changes', prompt: 'Commit the pending changes with a descriptive message.' },
   { label: 'Pull', group: 'Git', icon: '⬇️', when: 'behind', info: '{behind} commits', prompt: 'Pull the current branch and tell me what changed.' },
   { label: 'Merge main', group: 'Git', icon: '🔀', when: 'repo', info: 'main → {branch}', prompt: 'Bring main into the current branch: git fetch, then merge origin/main. If there are conflicts, do not resolve them; list them and ask me.' },

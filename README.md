@@ -127,6 +127,7 @@ Written to the configuration file on first run. Delete or edit any of them.
 | Group | Button | Shown when | Does |
 | --- | --- | --- | --- |
 | Git | 📋 Status | repo | Asks for branch, pending changes and commits to push |
+| Git | 🌿 Switch branch | repo | Fetches, lists local and `origin` branches, asks which one to check out and switches; stops first if there are uncommitted changes |
 | Git | 💾 Commit | dirty | Commits the pending changes with a descriptive message |
 | Git | ⬇️ Pull | behind | Pulls the current branch and summarises what changed |
 | Git | 🔀 Merge main | repo | Fetches and merges `origin/main` into the current branch; lists conflicts instead of resolving them |
